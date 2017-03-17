@@ -29,6 +29,7 @@ RUN yum install -y which \
     openldap-clients \
     openssl \
     python-pip \
+    perl-Data-Dumper \
     libxslt && \
     yum clean all 
 
