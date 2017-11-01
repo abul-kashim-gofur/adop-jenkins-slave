@@ -43,7 +43,7 @@ RUN curl -fsSL http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Log-Log4perl
 	perl Makefile.PL &&\
 	make &&\
 	make test &&\
-	make install
+	make install &&\
 
 # Docker versions Env Variables
 ENV DOCKER_ENGINE_VERSION=1.10.3-1.el7.centos
