@@ -30,7 +30,6 @@ RUN yum install -y which \
     openssl \
     python-pip \
     perl-Data-Dumper \
-    perl-devel \
     libxslt && \
     yum clean all 
 
