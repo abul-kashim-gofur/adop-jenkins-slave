@@ -43,6 +43,7 @@ RUN curl -fsSL http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Log-Log4perl
 	cd Log-Log4perl-1.49 &&\
 	perl Makefile.PL &&\
 	make &&\
+	make test &&\
 	make install
 
 # Docker versions Env Variables
