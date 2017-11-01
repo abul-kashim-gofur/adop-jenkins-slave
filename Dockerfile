@@ -35,6 +35,16 @@ RUN yum install -y which \
 
 RUN pip install awscli==1.10.19
 
+# Install Log4perl perl module
+
+RUN curl -fsSL http://search.cpan.org/CPAN/authors/id/M/MS/MSCHILLI/Log-Log4perl-1.49.tar.gz > Log-Log4perl-1.49.tar.gz &&\
+	tar -xzf Log-Log4perl-1.49.tar.gz &&\
+	cd Log-Log4perl-1.49 &&\
+	perl Makefile.PL &&\
+	make &&\
+	make test &&\
+	make install &&\
+
 # Docker versions Env Variables
 ENV DOCKER_ENGINE_VERSION=1.10.3-1.el7.centos
 ENV DOCKER_COMPOSE_VERSION=1.6.0
